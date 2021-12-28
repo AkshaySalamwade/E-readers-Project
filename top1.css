@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    background-color: rgb(245, 223, 245);
+}
+#topbar{
+    box-shadow: 0 2px 4px grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(269deg,#8b775c,#e09e46);
+    width: 100%;
+    
+}
+#topbar nav a{
+    margin-right: 24px;
+
+    
+}
+.log{
+    display:flex;
+    align-items: center;
+}
+.logo{
+    
+    height: 70px;
+    
+}
+.thed{
+    font-size: 25px;
+    font-family: cursive;
+    color:white;
+}
+.thed:hover{
+    font-size: 28px;
+}
+.thed1{
+    font-size: 20px;
+}
+.tbtn{
+    background: linear-gradient(269deg,#e7b9e7,#37ebaf);
+    padding-left: 50px;
+    border-top-left-radius:  25px;
+    border-bottom-left-radius:  25px;
+
+}
+.btn1{
+    width: 70px;
+    height: 25px;
+    background: linear-gradient(269deg,#0bf11e,#13ec92);
+}
+.btn1:hover{
+    background: linear-gradient(269deg,#fdfdfd,#ffffff);
+}
+#vg{
+    padding: 4% 8%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+  /*  flex-direction: column;*/
+       /*............ section*/
+    
+}
+
+.vc{                             /*............ division*/
+    width: calc(100% - 30px);
+    /*height: 30%;*/
+    border-radius: 6px;
+    margin: 15px;
+    box-shadow: 0 0 19px gray;
+    
+    
+}
+
+@media(min-width: 600px){
+    .vc{
+        width:calc(50% -15px);
+        
+    }
+    .thumbnail{                     
+        width: 100%;
+        height: 270px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    
+    }
+   /* .ct3{
+        width:calc(50% - 30px);
+    }*/
+}
+ 
+@media(min-width: 768px){
+    .vc{
+        width:calc(33% - 30px);
+    }
+    .thumbnail{                     
+        width: 100%;
+        height: 270px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    
+    }
+}
+
+@media(min-width: 992px){
+    .vc{
+        width:calc(25% - 30px);
+        height: 30%;
+    }
+    .thumbnail{                     
+        width: 100%;
+        height: 270px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    
+    }
+
+}
+    
+
+
+.vc:hover{
+    box-shadow: 0 0 19px rgb(10, 238, 86);
+    
+
+}
+
+.thumbnail{                      /*............ image*/
+    width: 100%;
+    height: 310px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+
+}
+.title{
+    margin: 0;
+    padding: 12px;
+    font-family: sans-serif;
+    text-align: justify;
+    background-color: white;
+    
+
+}
+.title:hover{
+    text-shadow: #fc1d00;
+    
+    cursor: pointer;
+    color:seagreen;
+}
+
+.story{
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin: 0;
+    padding: 0px 16px;
+    padding-bottom: 16px;
+    font-family: sans-serif;
+    text-align: justify;
+    background-color: white;
+    
+    
+
+}
+.author-name{
+    color: black;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.price{
+    font-family: sans-serif;
+    margin-left: 5px;
+    font-size: 16px;
+    color: rgb(27, 132, 252);
+    background-color: white;
+}
+/*----------------------------------------------------------*/
+
+.ctmain{
+    font-family: sans-serif;
+}
+.ct1{
+    padding-left:8% ;
+    padding-right:8% ;
+    padding-top: 10%;
+    font-family: sans-serif;
+    
+    
+    
+    
+}
+
+.ct2{
+    padding: 0% 8%;
+    
+    
+
+}
+.tlog{
+    display:flex;
+    align-items: center;
+}
+
+.ct3{
+    padding-left:8%;
+    padding-right:8%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.all_c{
+    font-size: 20px;
+    padding: 6px 16px;
+    border-radius: 15px;
+    border: 1px solid #0084ff;
+    background: #0084ff; background: -webkit-linear-gradient(181deg,#0048ff,#0096ff);
+    background: -o-linear-gradient(181deg,#0048ff,#0096ff);
+    background: linear-gradient(269deg,#0048ff,#0096ff);
+   
+    color:white;
+    margin:5px;
+    cursor: pointer;
+    width: auto;
+}
+.all_c:hover{
+    background: linear-gradient(269deg,#fafafa,#f0f2f3);
+    color: #0084ff;;
+}
+
+.all_c1{
+    font-size: 20px;
+    color: #0084ff;
+    padding: 6px 16px;
+    border-radius: 15px;
+    border: 1px solid #0084ff;
+    background-color: white;
+    margin:5px;
+    cursor: pointer;
+    width: auto;
+}
+.all_c1:hover{
+    background: linear-gradient(269deg,#0048ff,#0096ff);
+    color: white;
+}

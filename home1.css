@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+  
+  }
+    
+ /*.main_header{
+padding: 10px;
+background-color: black;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+ }*/
+
+  header{
+
+ 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), 
+    rgba(117, 19, 93, 0.73)),url('lib.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid;
+    animation: change 10s infinite ease-in-out;
+  
+  }
+  
+  @keyframes change{
+    0%
+    {
+        background-image: url(Kalavantin-trek.jpg);
+    }
+    20%
+    {
+        background-image: url(taj.jpg);
+    }
+    40%
+    {
+        background-image: url(Garlic_Dal.jpg);
+    }
+    60%
+    {
+        background-image: url(lib.jpg);
+    }
+    80%
+    {
+        background-image: url(Kalavantin-trek.jpg);
+    }
+    100%
+    {
+        background-image: url(Garlic_Dal.jpg);
+    }
+}
+
+
+
+
+
+  nav{
+  width: 100%;
+  height: 15vh;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  /*position: fixed;*/
+  }
+
+
+ 
+  
+
+  nav .logo{
+    flex: 1;
+    /*background-color: aqua;
+    display: flex;
+    justify-content: cover;
+  /*  
+  width: 25%;
+  text-align: center;
+  height: 10vh;
+  background-color: blue;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;*/
+  
+  }
+ /*
+  nav .logo h1{
+    display: flex;
+  }*/
+  
+  .h1decorate{
+
+   font-size: 40px;
+   font-family: monospace;
+
+
+
+  }
+
+  nav .menu{
+      flex:2 ;
+  /*width: 40%;*/
+  /*background-color: chocolate;*/
+  display: flex;
+  justify-content: space-evenly;  
+  
+  }
+  
+  nav .menu a {
+    /* flex: 1;*/
+     margin-left: 6px;
+  margin-right: 6px;
+    /*width: 25%;
+    font-size: 25px;*/
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  
+  }
+
+  nav .menu a:hover{
+
+    color: #00b894;
+  } 
+
+  
+  main{
+  
+   width: 100%;
+   height: 85vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: white;
+   
+
+  
+  }
+  
+
+
+
+  
+  section h3{
+  
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+  
+  }
+  
+  section h1{
+     margin: 30px 0 20px 0;
+     font-size: 55px;
+     font-weight: 700;
+     text-shadow: 2px 1px 5px black;
+     text-transform: uppercase;
+  
+  }
+  
+  section p{
+  
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  
+  }
+  
+  section a{
+   
+  padding: 12px 30px;
+  border-radius: 5px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all .5s ease;
+  }
+  
+  section .btnone{
+  
+  background: white;
+  color: black;
+  font-size: large;
+  
+  }
+  .btnone:hover
+  {
+    margin-left: 5px;
+    background: #00b894;
+    color: white;
+    font-size: large;
+    
+
+  }
+  
+  
+  section .btntwo{
+     margin-left: 5px;
+    background: #00b894;
+    color: white;
+    font-size: large;
+    
+    }
+  .btntwo:hover{
+
+    background: white;
+    color: black;
+    font-size: large;
+  }
+     
+
+.change_content::after{
+
+  content: '';
+  animation: changetext 10s infinite linear;
+   color:#00b894
+} 
+
+@keyframes changetext{
+  0%{content: " and Grow";} 
+  20%{content: " and SMART";}
+  40%{content: " and Grow";}
+  60%{content: " and HIKE";}
+  80%{content: " and Grow";}
+  0%{content: " and SMART";}
+}
+
+
+
+
+
+  
+  .parent3 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .child3 {
+    width: 350px;
+    margin: 1px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0,0.7);
+    margin-bottom: 2px;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  .child3:hover{
+   
+  background: #00b894;
+
+
+  }
+  
+  .child3-img {
+  height:100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+    
+  }
+  
+  .child3-subtitle {
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+  }
+
+  /*.services
+  {
+   width: 100%;
+  /* height: 600px;
+   background-color: blue;
+
+  } */
+
+  .service_intro
+  {
+     height: 200px;
+     /* background-color: red;*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+
+  }
+
+  .service_intro h1{
+      
+   color: rgba(0, 0, 0,0.7);
+   font-size: 40px;
+   font-weight: bold ;
+   font-family: cursive; 
+
+  }
+
+
+
+  .about-section
+  {  
+    margin-top: 70px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+
+  }
+
+  /*.aboutus
+  { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }*/
+ .team
+ {
+     margin-top: 20px;
+     font-size: 40px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #vg{
+  
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: burlywood;
+  
+  
+  
+  
+/*  flex-direction: column;*/
+     /*............ section*/
+  
+}
+
+.vc{                             /*............ division*/
+  /*width: calc(100% - 50px);
+  /*height: 30%;*/
+  border-radius: 6px;
+  margin: 35px;
+  margin-left: 40px;
+  margin-right: 40px;
+  box-shadow: 0 0 12px gray;
+
+  
+  
+  
+}
+
+@media(min-width: 600px){
+  .vc{
+      width:calc(50% -15px);
+      
+  }
+  .thumbnail{                     
+      width: 100%;
+      height: 270px;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+  
+  }
+ /* .ct3{
+      width:calc(50% - 30px);
+  }*/
+}
+
+@media(min-width: 768px){
+  .vc{
+      width:calc(33% - 30px);
+  }
+  .thumbnail{                     
+      width: 100%;
+      height: 270px;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+  
+  }
+}
+
+@media(min-width: 992px){
+  .vc{
+      width:calc(25% - 30px);
+      height: 30%;
+  }
+  .thumbnail{                     
+      width: 100%;
+      height: 270px;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+  
+  }
+
+}
+  
+
+
+.vc:hover{
+  box-shadow: 0 0 19px rgb(10, 238, 86);
+  
+
+}
+
+.thumbnail{                      /*............ image*/
+  width: 100%;
+  height: 310px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+
+}
+.title{
+  margin: 0;
+  padding: 12px;
+  font-family: sans-serif;
+  text-align: justify;
+  background-color: white;
+  
+
+}
+.title:hover{
+  text-shadow: #fc1d00;
+  
+  cursor: pointer;
+  color:seagreen;
+}
+
+.story{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  height: 150px;
+
+
+  background-color: white;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0;
+  padding: 0px 16px;
+  padding-bottom: 16px;
+  font-family: sans-serif;
+  text-align: justify;
+  background-color: white;
+
+
+  
+  
+
+}
+.author-name{
+  color: black;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.price{
+  font-family: sans-serif;
+  margin-left: 5px;
+  font-size: 16px;
+  color: rgb(27, 132, 252);
+  background-color: white;
+}
+
+.AboutBtn
+{
+  width: 100%;
+  margin-top: 15px;
+  height: 40px;
+  color: white;
+  background-color: rgba(0, 0, 0,0.7);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: monospace;
+
+
+}
+
+.AboutBtn:hover
+{
+  background-color: #00b894;;
+
+}
+
+
+
+
